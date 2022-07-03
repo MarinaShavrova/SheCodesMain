@@ -1,6 +1,6 @@
 const city = 'Dnipro';
-const URL_API = `http://api.openweathermap.org/data/2.5/forecast?appid=302194042e30cf68ae215cbabca7559f&units=metric&q=`;
-const IMG_PATH = 'http://openweathermap.org/img/wn/';
+const URL_API = `https://api.openweathermap.org/data/2.5/forecast?appid=302194042e30cf68ae215cbabca7559f&units=metric&q=`;
+const IMG_PATH = 'https://openweathermap.org/img/wn/';
 const URL_WEATHER = `https://api.openweathermap.org/data/2.5/weather?appid=302194042e30cf68ae215cbabca7559f&units=metric&q=`;
 const now = new Date();
 const year = now.getFullYear();
