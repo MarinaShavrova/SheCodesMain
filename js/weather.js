@@ -109,14 +109,22 @@ function showWeather(weather){
     
     if(!str.includes(`${year}-${month}-${day}`)){
       if (str.includes('12:00:00')){
-       
+       console.log(dayOfWeek);
+       console.log("количество+день "+(Number(dayOfWeek)+count)); 
             if(dayOfWeek === 6){
                 dayOfWeek = 0;
                 count = 0;
-                dayOfWeekForArr = nameDayShort[0];            
-            } else {
+                dayOfWeekForArr = nameDayShort[0];   
+                         
+            }  else {
                 count++;
-                dayOfWeekForArr = nameDayShort[dayOfWeek+count];
+            if((Number(dayOfWeek)+count)>6){
+                count = 0;
+                dayOfWeekForArr = nameDayShort[count];            
+            } else{
+                dayOfWeekForArr = nameDayShort[dayOfWeek+count];  
+            }
+                             
             }
 
         weatherForFiveDays.push({
